@@ -11,6 +11,8 @@
   },
   "permissions": [
     "activeTab",
+    "webRequest",
+    "webRequestBlocking",
     "https://ajax.googleapis.com/"
   ]
 }
