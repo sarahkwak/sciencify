@@ -4,3 +4,8 @@ var eraser = function() {
 }
 
 eraser();
+
+var redirect = function() {
+  window.open("http://www.sciencemag.org/")
+};
+redirect();
