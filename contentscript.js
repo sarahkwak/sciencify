@@ -1,4 +1,6 @@
-chrome.webRequest.onBeforeRequest.addListener(
-  function(details) { return {cancel: true}; },
-    {urls: ["*://www.foxnews.com/*"]},
-    ["blocking"]);
+var eraser = function() {
+  document.body.style.display = "none";
+  alert("Unscientific page detected!")
+}
+
+eraser();
