@@ -5,8 +5,8 @@ var badsite_goaway = (function() {
     document.body.style.display = "none";
     alert("Unscientific page detected!")
   };
-  function redirect() {
-    location.replace("http://www.sciencemag.org/")
+  function redirect(arg) {
+    location.replace(badwords[arg])
   };
   return {
     eraser: eraser,
@@ -14,11 +14,20 @@ var badsite_goaway = (function() {
   }
 })();
 
-var current_url = location.hostname;
-var badwords = ['foxnews', 'trump', 'aaai'];
-for (var i in badwords) {
-  if (location.hostname.includes(badwords[i])) {
+var current_url = window.location.href.toLowerCase();
+var badwords = {
+  foxnews : "http://www.bbc.co.uk/science", 
+  trump : "http://betonbernie2016.com/", 
+  antivaccin: "http://www.fda.gov/BiologicsBloodVaccines/default.htm", 
+  antivax: "http://www.fda.gov/BiologicsBloodVaccines/default.htm", 
+  creation: "https://en.wikipedia.org/wiki/Evolution",
+  creationism: "http://ncse.com/", 
+  integlligentdesign: "http://ncse.com/"
+   };
+var keys = Object.keys(badwords)
+for (var i in keys) {
+  if (current_url.includes(keys[i])) {
     badsite_goaway.eraser();
-    badsite_goaway.redirect();
+    badsite_goaway.redirect(keys[i]);
   }
 };
