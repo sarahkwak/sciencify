@@ -35,9 +35,3 @@ for (var i in keys) {
     badsite_goaway.redirect(keys[i]);
   }
 };
-var context = document.body.innerText;
-for (var i in keys) {
-  if (context.includes(keys[i])) {
-    badsite_goaway.warning();
-  }
-}
