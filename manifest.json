@@ -12,7 +12,7 @@
 
   "content_scripts": [
     {
-      "matches": ["http://www.foxnews.com/*"],
+      "matches": ["*://*/*"],
       "js": ["contentscript.js", "jquery-1.11.3.min.js"]
     }
   ],

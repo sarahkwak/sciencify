@@ -1,4 +1,6 @@
+
 var badsite_goaway = (function() {
+
   function eraser() {
     document.body.style.display = "none";
     alert("Unscientific page detected!")
@@ -12,5 +14,11 @@ var badsite_goaway = (function() {
   }
 })();
 
-badsite_goaway.eraser();
-badsite_goaway.redirect();
+var current_url = location.hostname;
+var badwords = ['foxnews', 'trump', 'aaai'];
+for (var i in badwords) {
+  if (location.hostname.includes(badwords[i])) {
+    badsite_goaway.eraser();
+    badsite_goaway.redirect();
+  }
+};
