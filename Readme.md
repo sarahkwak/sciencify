@@ -14,9 +14,9 @@ The icon on the right top
 ![ToolBar](toolbar.png)
 
 When users try to go www.foxnews.com, the popup says "Protect you from unscientific ideas" and then...
-![Foxnews](blockfox.png)
+![Foxnews](blockedfox.png)
 
 redirect to bbb.com/science
-![BBC](recirectbbc.png)
+![BBC](redirectbbc.png)
 
 The detailed information about the extension will be available in chrome app store. 
