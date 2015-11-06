@@ -2,7 +2,7 @@
 ![ToolBar](hero.png)
 ## The best and most scientific Chrome Extension in the world
 
-Sciencify will block users visiting unscientific website like foxnews.com and redirect them regit science site like sciencemag.com
+Sciencify will block users visiting unscientific website like foxnews.com and redirect them to proven site like bbc.com/science.
 
 ![ChromeExtension](chromeextension.png)
 
@@ -17,4 +17,3 @@ When users try to go www.foxnews.com, the popup says "Protect you from unscienti
 redirect to bbb.com/science
 ![BBC](redirectbbc.png)
 
-The detailed information about the extension will be available in chrome app store. 
